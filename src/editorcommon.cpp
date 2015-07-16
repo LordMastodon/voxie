@@ -48,7 +48,7 @@ std::string convert_str(const QString & str)
 QString get_model_name(QWidget * parent, bool save)
 {
     QString caption = QObject::tr("Model file dialog");
-    QString filter = QObject::tr("Voxie model (*.vxi);;All Files (*)");
+    QString filter = QObject::tr("Voxie model (*.vxi);;Collada DAE (*.dae);;All Files (*)");
     QString text;
     if (save)
         text = QFileDialog::getSaveFileName(parent, caption, "", filter);
